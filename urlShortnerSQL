@@ -1,0 +1,20 @@
+create database UrlShortner;
+
+use UrlShortner;
+
+CREATE TABLE KeyTable (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    key VARCHAR(30),
+    longUrl VARCHAR(2000) // limit of URL in browser
+);
+
+
+CREATE TABLE Users (
+    Name VARCHAR(50),
+    Last_Name VARCHAR(50),
+    Email_Id VARCHAR(50) PRIMARY KEY,
+    Password VARCHAR(50)
+);	
+
+
+// TODO: Create TTL, expire_date and creation_Date fields in table
